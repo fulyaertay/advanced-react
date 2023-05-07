@@ -4,7 +4,7 @@
 
 - [Challenges](#challenges)
 
-  - [Challenge 1](#1-class-components-challenges)
+  - [Challenge 1](#1-class-components-challenges/challenge-1)
 
 
     

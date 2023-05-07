@@ -6,6 +6,7 @@
   - [Challenge 1: Convert functional components to class components](#1-class-components-challenges/challenge-1)
   - [Challenge 2: Convert a class component with state](#1-class-components-challenges/challenge-2)
   - [Challenge 3: Constructor Method](#1-class-components-challenges/challenge-3)
+  - [Challenge 4: Updating Complex State with this.setState()](#1-class-components-challenges/challenge-4)
 
   ## Overview
 
@@ -33,3 +34,9 @@
   ### Visualization of the app;
 
   ![image](./1-class-components-challenges/challenge-3/challenge3.png)
+  
+  ### Challenge 4: Updating Complex State with this.setState()
+
+  ### Visualization of the app;
+
+  ![image](./1-class-components-challenges/challenge-4/challenge4.png)

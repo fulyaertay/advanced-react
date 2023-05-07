@@ -4,8 +4,8 @@
 
 - [1-class-components-challenges](#1-class-components-challenges)
 
-  - [Challenge 1](#1-class-components-challenges/challenge-1)
-  - [Challenge 2](#1-class-components-challenges/challenge-2)
+  - [Challenge 1: Convert functional components to class components](#1-class-components-challenges/challenge-1)
+  - [Challenge 2: Convert a class component with state](#1-class-components-challenges/challenge-2)
 
 
     

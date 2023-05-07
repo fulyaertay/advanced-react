@@ -12,6 +12,7 @@ export default class WindowTracker extends React.Component {
     componentDidMount() {
         window.addEventListener("resize", this.watchWidth)
     }
+    //componentDidUpdate(){}
     
     componentWillUnmount() {
         window.removeEventListener("resize", this.watchWidth)

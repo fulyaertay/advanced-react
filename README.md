@@ -1,4 +1,4 @@
-**## Table of contents**
+## Table of contents
 
 - [Overview](#overview)
 - [1-class-components-challenges](#1-class-components-challenges)

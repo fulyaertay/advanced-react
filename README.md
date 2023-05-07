@@ -5,6 +5,7 @@
 - [1-class-components-challenges](#1-class-components-challenges)
 
   - [Challenge 1](#1-class-components-challenges/challenge-1)
+  - [Challenge 2](#1-class-components-challenges/challenge-2)
 
 
     
@@ -15,7 +16,13 @@
 
   ## 1-class-components-challenges
 
-  ### Challenge 1
+  ### Challenge 1: Convert functional components to class components
 
   ### Visualization of the app;
   ![image](./1-class-components-challenges/challenge-1/challenge1.png)
+  
+
+  ### Challenge 2: Convert a class component with state
+
+  ### Visualization of the app;
+  ![image](./1-class-components-challenges/challenge-2/challenge2.png)

@@ -31,7 +31,7 @@
   
   ### Challenge 3: Constructor Method
   
-  ## Description: Added constructor method on Challenge 2 practice above
+  ### Description: Added constructor method on Challenge 2 practice above
 
   ### Visualization of the app;
   ![image](./1-class-components-challenges/challenge-3/challenge3.png)

@@ -6,6 +6,7 @@
 
   - [Challenge 1: Convert functional components to class components](#1-class-components-challenges/challenge-1)
   - [Challenge 2: Convert a class component with state](#1-class-components-challenges/challenge-2)
+  - [Challenge 3: Constructor Method](#1-class-components-challenges/challenge-3)
 
 
     
@@ -26,3 +27,11 @@
 
   ### Visualization of the app;
   ![image](./1-class-components-challenges/challenge-2/challenge2.png)
+  
+  
+  ### Challenge 3: Constructor Method
+  
+  ## Description: Added constructor method on Challenge 2 practice above
+
+  ### Visualization of the app;
+  ![image](./1-class-components-challenges/challenge-3/challenge3.png)

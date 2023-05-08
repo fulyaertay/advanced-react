@@ -1,4 +1,4 @@
-**## Table of contents**
+## Table of contents
 
 - [Overview](#overview)
 - [1-class-components-challenges](#1-class-components-challenges)
@@ -7,6 +7,7 @@
   - [Challenge 2: Convert a class component with state](#1-class-components-challenges/challenge-2)
   - [Challenge 3: Constructor Method](#1-class-components-challenges/challenge-3)
   - [Challenge 4: Updating Complex State with this.setState()](#1-class-components-challenges/challenge-4)
+  - [Challenge 5: Lifecycle Methods](#1-class-components-challenges/challenge-5)
 
   ## Overview
 
@@ -14,6 +15,7 @@
   You can see the visual representations of the each app below.
 
   ## 1-class-components-challenges
+     These challenges include class components and lifecycle methods.
 
   ### Challenge 1: Convert functional components to class components
 
@@ -40,3 +42,10 @@
   ### Visualization of the app;
 
   ![image](./1-class-components-challenges/challenge-4/challenge4.png)
+  
+    
+  ### Challenge 5: Lifecycle Methods
+
+  ### Visualization of the app;
+
+  ![image](./1-class-components-challenges/challenge-5/challenge5.png)

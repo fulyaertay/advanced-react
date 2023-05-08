@@ -16,6 +16,7 @@
   
 - [3-performance](#3-performance)
   - [Challenge 1: React.memo()](#3-performance/challenge-1)
+  - [Challenge 2: shouldComponentUpdate()](#3-performance/challenge-2)
 
   ## Overview
 
@@ -89,3 +90,9 @@
   ### Visualization of the app;
 
   ![image](./3-performance/challenge-1/challenge1.png)
+
+  ### Challenge 2: shouldComponentUpdate()
+  Implied performance optimization with shouldComponentUpdate() on same project on Challenge 1 
+
+
+

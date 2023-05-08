@@ -81,7 +81,7 @@
   
   
    
-  ## 3-performance-optimization
+  ## 3-performance
      These challenges include performance optimization methods in React
 
   ### Challenge 1: React.memo()

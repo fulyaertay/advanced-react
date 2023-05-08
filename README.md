@@ -11,6 +11,7 @@
   
 - [2-code-reuse-in-react](#2-code-reuse-in-react)
   - [Challenge 1: React Children](#2-code-reuse-in-react/challenge-1)
+  - [Challenge 2: Higher Order Components](#2-code-reuse-in-react/challenge-2)
 
   ## Overview
 
@@ -63,3 +64,7 @@
   ### Visualization of the app;
 
   ![image](./2-code-reuse-in-react/challenge-1/challenge1.png)
+  
+  ### Challenge 2: Higher Order Components
+
+  Writed a higher-order component that passes a new prop to the given componentcalled "favoriteNumber" and includes a favorite number. Then, in App.js, rendered that favorite number to the screen. It is written just 42.

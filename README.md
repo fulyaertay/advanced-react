@@ -8,6 +8,9 @@
   - [Challenge 3: Constructor Method](#1-class-components-challenges/challenge-3)
   - [Challenge 4: Updating Complex State with this.setState()](#1-class-components-challenges/challenge-4)
   - [Challenge 5: Lifecycle Methods](#1-class-components-challenges/challenge-5)
+  
+- [2-code-reuse-in-react](#2-code-reuse-in-react)
+  - [Challenge 1: React Children](#2-code-reuse-in-react/challenge-1)
 
   ## Overview
 
@@ -49,3 +52,14 @@
   ### Visualization of the app;
 
   ![image](./1-class-components-challenges/challenge-5/challenge5.png)
+  
+  
+ 
+  ## 2-code-reuse-in-react
+     These challenges include code reuse in React
+
+  ### Challenge 1: React Children
+
+  ### Visualization of the app;
+
+  ![image](./2-code-reuse-in-react/challenge-1/challenge1.png)

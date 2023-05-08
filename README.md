@@ -15,6 +15,7 @@
   You can see the visual representations of the each app below.
 
   ## 1-class-components-challenges
+     These challenges include class components and lifecycle methods.
 
   ### Challenge 1: Convert functional components to class components
 

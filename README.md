@@ -67,4 +67,4 @@
   
   ### Challenge 2: Higher Order Components
 
-  Writed a higher-order component that passes a new prop to the given componentcalled "favoriteNumber" and includes a favorite number. Then, in App.js, rendered that favorite number to the screen. It is written just 42.
+  Writing a higher-order component that passes a new prop to the given componentcalled "favoriteNumber" and includes a favorite number. Then, in App.js, rendered that favorite number to the screen. It is written just 42.

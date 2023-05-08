@@ -13,6 +13,9 @@
   - [Challenge 1: React Children](#2-code-reuse-in-react/challenge-1)
   - [Challenge 2: Higher Order Components](#2-code-reuse-in-react/challenge-2)
   - [Challenge 3: Render Props](#2-code-reuse-in-react/challenge-3)
+  
+- [3-performance](#3-performance)
+  - [Challenge 1: React.memo()](#3-performance/challenge-1)
 
   ## Overview
 
@@ -75,3 +78,14 @@
   ### Visualization of the app;
 
   ![image](./2-code-reuse-in-react/challenge-3/challenge-3.png)
+  
+  
+   
+  ## 3-performance-optimization
+     These challenges include performance optimization methods in React
+
+  ### Challenge 1: React.memo()
+
+  ### Visualization of the app;
+
+  ![image](./3-performance/challenge-1/challenge1.png)

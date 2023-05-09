@@ -19,6 +19,10 @@
   - [Challenge 2: shouldComponentUpdate()](#3-performance/challenge-2)
   - [Challenge 3: React.PureComponent](#3-performance/challenge-3)
 
+- [4-react-context](#4-react-context)
+  - [Challenge 1: Context Practice 1](#4-react-context/challenge-1)
+
+
   ## Overview
 
   Completed these challenges that are parts of [Scrimba](https://scrimba.com/learn/frontend/)'s Advanced React Course. I learned fundamentals of advanced React topics with these challenges.
@@ -97,6 +101,16 @@
   
   ### Challenge 3: React.PureComponent
   Implied performance optimization with React.PureComponent on the same project on Challenge 2
+  
+  
+  ## 4-react-context
+     These challenges include react context practices in React
+
+  ### Challenge 1: Context Practice with createContext() and contextType
+
+  ### Visualization of the app;
+
+  ![image](./4-react-context/challenge-1/challenge1.png)
 
 
 

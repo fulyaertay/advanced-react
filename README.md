@@ -21,6 +21,7 @@
 
 - [4-react-context](#4-react-context)
   - [Challenge 1: Context Practice 1](#4-react-context/challenge-1)
+  - [Challenge 2: Context Practice 2](#4-react-context/challenge-2)
 
 
   ## Overview
@@ -112,5 +113,6 @@
 
   ![image](./4-react-context/challenge-1/challenge1.png)
 
-
+  ### Challenge 2: Context.Consumer
+  Converted functional components and used <UserContext.Consumer> for the above practice
 

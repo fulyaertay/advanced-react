@@ -122,5 +122,5 @@
 
   ### Visualization of the app;
 
-  ![image](./4-react-context/challenge-3/challenge3.png)
+  ![image](./4-react-context/challenge-3/challenge4.png)
 

@@ -23,6 +23,7 @@
   - [Challenge 1: Context Practice 1](#4-react-context/challenge-1)
   - [Challenge 2: Context Practice 2](#4-react-context/challenge-2)
   - [Challenge 3: Context Practice 3](#4-react-context/challenge-3)
+  - [Challenge 4: Context Practice 4](#4-react-context/challenge-4)
 
 
   ## Overview
@@ -123,4 +124,12 @@
   ### Visualization of the app;
 
   ![image](./4-react-context/challenge-3/challenge4.png)
+  
+    
+  ### Challenge 4: Adding form
+  Changing userContext into a component that has state and providing the ability to change the user's username on Challenge 3
+
+  ### Visualization of the app;
+
+  ![image](./4-react-context/challenge-4/challenge4.png)
 

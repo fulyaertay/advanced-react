@@ -124,4 +124,12 @@
   ### Visualization of the app;
 
   ![image](./4-react-context/challenge-3/challenge4.png)
+  
+    
+  ### Challenge 4: Adding form
+  Changing userContext into a component that has state and providing the ability to change the user's username on Challenge 3
+
+  ### Visualization of the app;
+
+  ![image](./4-react-context/challenge-4/challenge4.png)
 

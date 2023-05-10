@@ -23,6 +23,7 @@
   - [Challenge 1: Context Practice 1](#4-react-context/challenge-1)
   - [Challenge 2: Context Practice 2](#4-react-context/challenge-2)
   - [Challenge 3: Context Practice 3](#4-react-context/challenge-3)
+  - [Challenge 4: Context Practice 4](#4-react-context/challenge-4)
 
 
   ## Overview

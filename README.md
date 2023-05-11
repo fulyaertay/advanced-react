@@ -146,5 +146,5 @@
 
   ### Visualization of the app;
 
-  ![image](./5-react-hooks/challenge-1-speed-typing-game/challenge1.png)
+  ![image](./5-react-hooks/challenge-1-speed-typing-game/challenge-1.png)
 

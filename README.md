@@ -30,6 +30,7 @@
   - [Challenge 1: Speed Typing Game Part 1](#5-react-hooks/challenge-1)
   - [Challenge 2: Speed Typing Game Part 2](#5-react-hooks/challenge-2)
   - [Challenge 3: Refactor "Challenge 3 on 4-react-context" ](#5-react-hooks/challenge-3)
+  - [Challenge 4: Speed Typing Game Part 3](#5-react-hooks/challenge-4)
 
 
   ## Overview
@@ -153,7 +154,9 @@
   ### Challenge 2: Speed Typing Game Part 2
   useRef() hook added to focus textarea on Challenge 2 
   
-  
   ### Challenge 3: Refactor "Challenge 3: Changing Context on 4-react-context" 
   Adding useContext() hook added to Challenge 3 on 4-react-context
+  
+  ### Challenge 4: : Speed Typing Game Part 3
+  useWordGame() custom hook added to Speed Typing Game Part 2 on Challenge 2
 

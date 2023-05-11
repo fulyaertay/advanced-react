@@ -145,18 +145,18 @@
      These challenges include react hooks practices in React
 
   ### Challenge 1: Speed Typing Game Part 1
-  useState(), useEffect() hooks are used in this project
+  **useState(), useEffect()** hooks are used in this project
 
   ### Visualization of the app;
 
   ![image](./5-react-hooks/challenge-1-speed-typing-game/challenge-1.png)
   
   ### Challenge 2: Speed Typing Game Part 2
-  useRef() hook added to focus textarea on Challenge 2 
+  **useRef() hook** added to focus textarea on Challenge 2 
   
   ### Challenge 3: Refactor "Challenge 3: Changing Context on 4-react-context" 
-  Adding useContext() hook added to Challenge 3 on 4-react-context
+  Adding **useContext()** hook added to Challenge 3 on 4-react-context
   
   ### Challenge 4: : Speed Typing Game Part 3
-  useWordGame() custom hook added to Speed Typing Game Part 2 on Challenge 2
+  **useWordGame() custom hook** added to Speed Typing Game Part 2 on Challenge 2
 

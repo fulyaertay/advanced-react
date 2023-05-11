@@ -28,6 +28,7 @@
 
 - [5-react-hooks](#5-react-hooks)
   - [Challenge 1: Speed Typing Game Part 1](#5-react-hooks/challenge-1)
+  - [Challenge 2: Speed Typing Game Part 2](#5-react-hooks/challenge-2)
 
 
   ## Overview
@@ -142,9 +143,12 @@
      These challenges include react hooks practices in React
 
   ### Challenge 1: Speed Typing Game Part 1
-  useState(), useEffect() hooks are used in this projects
+  useState(), useEffect() hooks are used in this project
 
   ### Visualization of the app;
 
   ![image](./5-react-hooks/challenge-1-speed-typing-game/challenge-1.png)
+  
+  ### Challenge 2: Speed Typing Game Part 2
+  useref() hook added to focus textarea on Challenge 2 
 

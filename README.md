@@ -154,6 +154,6 @@
   useRef() hook added to focus textarea on Challenge 2 
   
   
-  ### Challenge 3: Refactor "Challenge 3 on 4-react-context" 
+  ### Challenge 3: Refactor "Challenge 3: Changing Context on 4-react-context" 
   Adding useContext() hook added to Challenge 3 on 4-react-context
 

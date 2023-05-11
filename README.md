@@ -26,6 +26,10 @@
   - [Challenge 4: Context Practice 4](#4-react-context/challenge-4)
 
 
+- [5-react-hooks](#5-react-hooks)
+  - [Challenge 1: Speed Typing Game](#5-react-hooks/challenge-1)
+
+
   ## Overview
 
   Completed these challenges that are parts of [Scrimba](https://scrimba.com/learn/frontend/)'s Advanced React Course. I learned fundamentals of advanced React topics with these challenges.
@@ -132,4 +136,15 @@
   ### Visualization of the app;
 
   ![image](./4-react-context/challenge-4/challenge4.png)
+  
+  
+  ## 5-react-hooks
+     These challenges include react hooks practices in React
+
+  ### Challenge 1: Speed Typing Game
+  useState(), useEffect() hooks are used in this projects
+
+  ### Visualization of the app;
+
+  ![image](./5-react-hooks/challenge-1-speed-typing-game/challenge1.png)
 

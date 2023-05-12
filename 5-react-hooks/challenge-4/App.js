@@ -1,4 +1,4 @@
-
+import React from "react"
 import useWordGame from "./hooks/useWordGame"
 
 function App() {

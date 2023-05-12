@@ -557,7 +557,7 @@ var _useWordGame3 = _interopRequireDefault(_useWordGame2);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-    var _useWordGame = (0, _useWordGame3.default)(5),
+    var _useWordGame = (0, _useWordGame3.default)(15),
         textBoxRef = _useWordGame.textBoxRef,
         handleChange = _useWordGame.handleChange,
         text = _useWordGame.text,
@@ -673,7 +673,7 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function useWordGame() {
-    var startingTime = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 10;
+    var startingTime = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 15;
 
     var _useState = (0, _react.useState)(""),
         _useState2 = _slicedToArray(_useState, 2),

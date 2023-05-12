@@ -1,5 +1,6 @@
 import {useState, useEffect, useRef} from "react"
 import PropTypes from 'prop-types'; 
+
 function useWordGame(startingTime = 10) {
     const [text, setText] = useState("")
     const [timeRemaining, setTimeRemaining] = useState(startingTime)

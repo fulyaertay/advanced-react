@@ -1,15 +1,16 @@
 {
   "name": "project",
   "dependencies": {
+    "prop-types": "^15.8.1",
     "react": "16.10.2",
     "react-dom": "16.10.2"
   },
   "devDependencies": {
-    "webpack": "^2.0",
     "babel-core": "^6.0",
     "babel-loader": "^7.0",
     "babel-preset-env": "*",
-    "babel-preset-react": "*"
+    "babel-preset-react": "*",
+    "webpack": "^2.0"
   },
   "scripts": {
     "build": "webpack",

@@ -42,5 +42,7 @@ function useWordGame(startingTime = 10) {
     
     return {textBoxRef, handleChange, text, isTimeRunning, timeRemaining, startGame, wordCount}
 }
-
+useWordGame.propTypes = {
+    startingTime: PropTypes.number.isRequired
+  }
 export default useWordGame

@@ -36,6 +36,7 @@
 - [6-react-router](#6-react-router)
   - [Challenge 1: React Router](#6-react-router/challenge-1)
   - [Challenge 2: Nested Routes](#6-react-router/challenge-2)
+  - [Challenge 3:  React Router Practice Part 1](#6-react-router/challenge-3)
 
   ## Overview
 
@@ -169,15 +170,22 @@
      These challenges include React Router methods in React
 
   ### Challenge 1: React Router
-  <BrowserRouter>, <Link>, <Switch> and <Route> components are used to practice
+  **BrowserRouter, Link, Switch and Route** components are used to practice
 
   ### Visualization of the app;
 
   ![image](./6-react-router/challenge-1/challenge1.png)
   
-  ### Challenge 1: Nested Routes
+  ### Challenge 2: Nested Routes
   Nested routes added for profile info and profile settings
 
   ### Visualization of the app;
 
   ![image](./6-react-router/challenge-2/challenge2.png)
+  
+  ### Challenge 3:  React Router Practice Part 1
+  **BrowserRouter, Link, Switch and Route** components are used to practice
+
+  ### Visualization of the app;
+
+  ![image](./6-react-router/challenge-3/challenge3.png)

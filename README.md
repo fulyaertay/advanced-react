@@ -33,6 +33,9 @@
   - [Challenge 4: Speed Typing Game Part 3](#5-react-hooks/challenge-4)
 
 
+- [6-react-router](#6-react-router)
+  - [Challenge 1: React Router](#6-react-router/challenge-1)
+
   ## Overview
 
   Completed these challenges that are parts of [Scrimba](https://scrimba.com/learn/frontend/)'s Advanced React Course. I learned fundamentals of advanced React topics with these challenges.
@@ -160,3 +163,12 @@
   ### Challenge 4: : Speed Typing Game Part 3
   **useWordGame() custom hook** added to Speed Typing Game Part 2 on Challenge 2
 
+
+  ## 6-react-router
+     These challenges include React Router methods in React
+
+  ### Challenge 1: React Router
+
+  ### Visualization of the app;
+
+  ![image](./6-react-router/challenge-1/challenge1.png)

@@ -170,7 +170,7 @@
      These challenges include React Router methods in React
 
   ### Challenge 1: React Router
-  <BrowserRouter>, <Link>, <Switch> and <Route> components are used to practice
+  **BrowserRouter, Link, Switch and Route** components are used to practice
 
   ### Visualization of the app;
 
@@ -184,7 +184,7 @@
   ![image](./6-react-router/challenge-2/challenge2.png)
   
   ### Challenge 3:  React Router Practice Part 1
-  <BrowserRouter>, <Link>, <Switch> and <Route> components are used to practice
+  **BrowserRouter, Link, Switch and Route** components are used to practice
 
   ### Visualization of the app;
 

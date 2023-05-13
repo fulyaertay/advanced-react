@@ -168,6 +168,7 @@
      These challenges include React Router methods in React
 
   ### Challenge 1: React Router
+  <BrowserRouter>, <Link>, <Switch> and <Route> components are used to practice
 
   ### Visualization of the app;
 

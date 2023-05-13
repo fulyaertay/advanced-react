@@ -180,4 +180,4 @@
 
   ### Visualization of the app;
 
-  ![image](./6-react-router/challenge-1/challenge2.png)
+  ![image](./6-react-router/challenge-2/challenge2.png)

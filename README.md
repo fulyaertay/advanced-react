@@ -35,6 +35,7 @@
 
 - [6-react-router](#6-react-router)
   - [Challenge 1: React Router](#6-react-router/challenge-1)
+  - [Challenge 2: Nested Routes](#6-react-router/challenge-2)
 
   ## Overview
 
@@ -173,3 +174,10 @@
   ### Visualization of the app;
 
   ![image](./6-react-router/challenge-1/challenge1.png)
+  
+  ### Challenge 1: Nested Routes
+  Nested routes added for profile info and profile settings
+
+  ### Visualization of the app;
+
+  ![image](./6-react-router/challenge-2/challenge2.png)

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import images from "./images"
+
 
 const CartContext = React.createContext()
 
@@ -11,7 +11,10 @@ function CartContextProvider({children}) {
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
-            .then(data => setAllPhotos(images))
+            .then(data => {
+                console.log(data)
+                setAllPhotos(data)})
+            
     }, [])
     
     function toggleFavorite(id) {

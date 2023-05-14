@@ -37,6 +37,7 @@
   - [Challenge 1: React Router](#6-react-router/challenge-1)
   - [Challenge 2: Nested Routes](#6-react-router/challenge-2)
   - [Challenge 3:  React Router Practice Part 1](#6-react-router/challenge-3)
+  - [Challenge 4:  React Router Practice Part 2](#6-react-router/challenge-4)
 
   ## Overview
 
@@ -189,3 +190,10 @@
   ### Visualization of the app;
 
   ![image](./6-react-router/challenge-3/challenge3.png)
+  
+  ### Challenge 4:  React Router Practice Part 2
+  **useParams()** added to Product Details page 
+
+  ### Visualization of the app;
+
+  ![image](./6-react-router/challenge-4/challenge4.png)

@@ -1,41 +1,35 @@
 import React, {useState, useEffect} from "react"
 
+const Context = React.createContext()
 
-const CartContext = React.createContext()
-
-function CartContextProvider({children}) {
-    const [cartItems, setCartItems] = useState([])
+function ContextProvider({children}) {
     const [allPhotos, setAllPhotos] = useState([])
+    const [cartItems, setCartItems] = useState([])
     
     const url = "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json"
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                setAllPhotos(data)})
-            
+            .then(data => setAllPhotos(data))
     }, [])
     
     function toggleFavorite(id) {
-        const updatedPhotos = allPhotos.map(photo => {
+        const updatedArr = allPhotos.map(photo => {
             if(photo.id === id) {
                 return {...photo, isFavorite: !photo.isFavorite}
             }
             return photo
         })
-        setAllPhotos(updatedPhotos)
+        
+        setAllPhotos(updatedArr)
     }
     
     function addToCart(newItem) {
         setCartItems(prevItems => [...prevItems, newItem])
     }
     
-    function removeFromCart(itemToRemove) {
-        setCartItems(prevItems => {
-            const filteredItems = prevItems.filter(item => item.id !== itemToRemove.id)
-            return filteredItems
-        })
+    function removeFromCart(id) {
+        setCartItems(prevItems => prevItems.filter(item => item.id !== id))
     }
     
     function emptyCart() {
@@ -43,17 +37,17 @@ function CartContextProvider({children}) {
     }
     
     return (
-        <CartContext.Provider value={{
+        <Context.Provider value={{
             allPhotos, 
-            cartItems, 
             toggleFavorite, 
+            cartItems, 
             addToCart, 
-            removeFromCart,
+            removeFromCart, 
             emptyCart
         }}>
             {children}
-        </CartContext.Provider>
+        </Context.Provider>
     )
 }
 
-export {CartContextProvider, CartContext}
+export {ContextProvider, Context}

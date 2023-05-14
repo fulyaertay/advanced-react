@@ -281,7 +281,7 @@ if (process.env.NODE_ENV === 'production') {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.CartContext = exports.CartContextProvider = undefined;
+exports.Context = exports.ContextProvider = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -295,39 +295,39 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
-var CartContext = _react2.default.createContext();
+var Context = _react2.default.createContext();
 
-function CartContextProvider(_ref) {
+function ContextProvider(_ref) {
     var children = _ref.children;
 
     var _useState = (0, _react.useState)([]),
         _useState2 = _slicedToArray(_useState, 2),
-        cartItems = _useState2[0],
-        setCartItems = _useState2[1];
+        allPhotos = _useState2[0],
+        setAllPhotos = _useState2[1];
 
     var _useState3 = (0, _react.useState)([]),
         _useState4 = _slicedToArray(_useState3, 2),
-        allPhotos = _useState4[0],
-        setAllPhotos = _useState4[1];
+        cartItems = _useState4[0],
+        setCartItems = _useState4[1];
 
     var url = "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json";
     (0, _react.useEffect)(function () {
         fetch(url).then(function (res) {
             return res.json();
         }).then(function (data) {
-            console.log(data);
-            setAllPhotos(data);
+            return setAllPhotos(data);
         });
     }, []);
 
     function toggleFavorite(id) {
-        var updatedPhotos = allPhotos.map(function (photo) {
+        var updatedArr = allPhotos.map(function (photo) {
             if (photo.id === id) {
                 return _extends({}, photo, { isFavorite: !photo.isFavorite });
             }
             return photo;
         });
-        setAllPhotos(updatedPhotos);
+
+        setAllPhotos(updatedArr);
     }
 
     function addToCart(newItem) {
@@ -336,12 +336,11 @@ function CartContextProvider(_ref) {
         });
     }
 
-    function removeFromCart(itemToRemove) {
+    function removeFromCart(id) {
         setCartItems(function (prevItems) {
-            var filteredItems = prevItems.filter(function (item) {
-                return item.id !== itemToRemove.id;
+            return prevItems.filter(function (item) {
+                return item.id !== id;
             });
-            return filteredItems;
         });
     }
 
@@ -350,11 +349,11 @@ function CartContextProvider(_ref) {
     }
 
     return _react2.default.createElement(
-        CartContext.Provider,
+        Context.Provider,
         { value: {
                 allPhotos: allPhotos,
-                cartItems: cartItems,
                 toggleFavorite: toggleFavorite,
+                cartItems: cartItems,
                 addToCart: addToCart,
                 removeFromCart: removeFromCart,
                 emptyCart: emptyCart
@@ -363,8 +362,8 @@ function CartContextProvider(_ref) {
     );
 }
 
-exports.CartContextProvider = CartContextProvider;
-exports.CartContext = CartContext;
+exports.ContextProvider = ContextProvider;
+exports.Context = Context;
 
 /***/ }),
 /* 3 */
@@ -3020,7 +3019,7 @@ var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _CartContext = __webpack_require__(2);
+var _Context = __webpack_require__(2);
 
 var _useHover3 = __webpack_require__(14);
 
@@ -3031,25 +3030,27 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function CartItem(_ref) {
     var item = _ref.item;
 
-    var _useContext = (0, _react.useContext)(_CartContext.CartContext),
-        removeFromCart = _useContext.removeFromCart;
-
     var _useHover = (0, _useHover4.default)(),
         _useHover2 = _slicedToArray(_useHover, 2),
         hovered = _useHover2[0],
         ref = _useHover2[1];
 
+    var _useContext = (0, _react.useContext)(_Context.Context),
+        removeFromCart = _useContext.removeFromCart;
+
+    var iconClassName = hovered ? "ri-delete-bin-fill" : "ri-delete-bin-line";
+
     return _react2.default.createElement(
         "div",
         { className: "cart-item" },
         _react2.default.createElement("i", {
-            ref: ref,
-            className: "ri-delete-bin" + (hovered ? "-fill" : "-line"),
+            className: iconClassName,
             onClick: function onClick() {
-                return removeFromCart(item);
-            }
+                return removeFromCart(item.id);
+            },
+            ref: ref
         }),
-        _react2.default.createElement("img", { src: item.url, width: "100px" }),
+        _react2.default.createElement("img", { src: item.url, width: "130px" }),
         _react2.default.createElement(
             "p",
             null,
@@ -3083,24 +3084,24 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(7);
 
-var _CartContext = __webpack_require__(2);
+var _Context = __webpack_require__(2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Header() {
-    var _useContext = (0, _react.useContext)(_CartContext.CartContext),
+    var _useContext = (0, _react.useContext)(_Context.Context),
         cartItems = _useContext.cartItems;
 
-    var cartClassName = cartItems.length ? "ri-shopping-cart-fill" : "ri-shopping-cart-line";
+    var cartClassName = cartItems.length > 0 ? "ri-shopping-cart-fill" : "ri-shopping-cart-line";
     return _react2.default.createElement(
         "header",
         null,
         _react2.default.createElement(
-            "h2",
-            null,
+            _reactRouterDom.Link,
+            { to: "/" },
             _react2.default.createElement(
-                _reactRouterDom.Link,
-                { to: "/" },
+                "h2",
+                null,
                 "Pic Some"
             )
         ),
@@ -3135,7 +3136,7 @@ var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _CartContext = __webpack_require__(2);
+var _Context = __webpack_require__(2);
 
 var _useHover3 = __webpack_require__(14);
 
@@ -3152,10 +3153,10 @@ function Image(_ref) {
         hovered = _useHover2[0],
         ref = _useHover2[1];
 
-    var _useContext = (0, _react.useContext)(_CartContext.CartContext),
+    var _useContext = (0, _react.useContext)(_Context.Context),
         toggleFavorite = _useContext.toggleFavorite,
-        cartItems = _useContext.cartItems,
         addToCart = _useContext.addToCart,
+        cartItems = _useContext.cartItems,
         removeFromCart = _useContext.removeFromCart;
 
     function heartIcon() {
@@ -3171,12 +3172,12 @@ function Image(_ref) {
     }
 
     function cartIcon() {
-        var itemInCart = cartItems.find(function (item) {
+        var alreadyInCart = cartItems.some(function (item) {
             return item.id === img.id;
         });
-        if (itemInCart) {
+        if (alreadyInCart) {
             return _react2.default.createElement("i", { className: "ri-shopping-cart-fill cart", onClick: function onClick() {
-                    return removeFromCart(img);
+                    return removeFromCart(img.id);
                 } });
         } else if (hovered) {
             return _react2.default.createElement("i", { className: "ri-add-circle-line cart", onClick: function onClick() {
@@ -3225,7 +3226,7 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactRouterDom = __webpack_require__(7);
 
-var _CartContext = __webpack_require__(2);
+var _Context = __webpack_require__(2);
 
 var _App = __webpack_require__(18);
 
@@ -3234,7 +3235,7 @@ var _App2 = _interopRequireDefault(_App);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(
-    _CartContext.CartContextProvider,
+    _Context.ContextProvider,
     null,
     _react2.default.createElement(
         _reactRouterDom.BrowserRouter,
@@ -3260,7 +3261,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _CartContext = __webpack_require__(2);
+var _Context = __webpack_require__(2);
 
 var _CartItem = __webpack_require__(21);
 
@@ -3274,21 +3275,21 @@ function Cart() {
         buttonText = _useState2[0],
         setButtonText = _useState2[1];
 
-    var _useContext = (0, _react.useContext)(_CartContext.CartContext),
+    var _useContext = (0, _react.useContext)(_Context.Context),
         cartItems = _useContext.cartItems,
-        removeFromCart = _useContext.removeFromCart,
         emptyCart = _useContext.emptyCart;
 
-    var cartItemElements = cartItems.map(function (item) {
-        return _react2.default.createElement(_CartItem2.default, { item: item, key: item.id });
-    });
     var totalCost = 5.99 * cartItems.length;
     var totalCostDisplay = totalCost.toLocaleString("en-US", { style: "currency", currency: "USD" });
+
+    var cartItemElements = cartItems.map(function (item) {
+        return _react2.default.createElement(_CartItem2.default, { key: item.id, item: item });
+    });
 
     function placeOrder() {
         setButtonText("Ordering...");
         setTimeout(function () {
-            console.log("Order Placed!");
+            console.log("Order placed!");
             setButtonText("Place Order");
             emptyCart();
         }, 3000);
@@ -3314,7 +3315,7 @@ function Cart() {
             { className: "order-button" },
             _react2.default.createElement(
                 "button",
-                { onClick: placeOrder, disabled: !cartItems.length },
+                { onClick: placeOrder },
                 buttonText
             )
         ) : _react2.default.createElement(
@@ -3346,24 +3347,24 @@ var _Image = __webpack_require__(23);
 
 var _Image2 = _interopRequireDefault(_Image);
 
-var _CartContext = __webpack_require__(2);
+var _Context = __webpack_require__(2);
 
 var _utils = __webpack_require__(27);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Photos() {
-    var _useContext = (0, _react.useContext)(_CartContext.CartContext),
+    var _useContext = (0, _react.useContext)(_Context.Context),
         allPhotos = _useContext.allPhotos;
 
-    var images = allPhotos.map(function (img, i) {
+    var imageElements = allPhotos.map(function (img, i) {
         return _react2.default.createElement(_Image2.default, { key: img.id, img: img, className: (0, _utils.getClass)(i) });
     });
 
     return _react2.default.createElement(
         "main",
         { className: "photos" },
-        images
+        imageElements
     );
 }
 

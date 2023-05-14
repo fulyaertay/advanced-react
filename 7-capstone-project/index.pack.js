@@ -3102,7 +3102,7 @@ function Header() {
             _react2.default.createElement(
                 "h2",
                 null,
-                "Pic Some"
+                "Photo Store"
             )
         ),
         _react2.default.createElement(

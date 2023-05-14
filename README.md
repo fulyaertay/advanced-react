@@ -39,6 +39,9 @@
   - [Challenge 3:  React Router Practice Part 1](#6-react-router/challenge-3)
   - [Challenge 4:  React Router Practice Part 2](#6-react-router/challenge-4)
 
+
+- [7-capstone-project](#7-capstone-project)
+
   ## Overview
 
   Completed these challenges that are parts of [Scrimba](https://scrimba.com/learn/frontend/)'s Advanced React Course. I learned fundamentals of advanced React topics with these challenges.
@@ -197,3 +200,33 @@
   ### Visualization of the app;
 
   ![image](./6-react-router/challenge-4/challenge4.png)
+
+
+
+## 7-capstone-project
+It is an eCommerce site that pulls all my new React knowledge together. You can access the random photos with the detail. I used the React context to provide and distribute photos. The photos is taken from the [Scrimba Images](https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json). 
+    
+## Check The Live Website ➡️ [Live Website](https://fe-photo-store.netlify.app/)
+
+```bash
+- User can see the list of photos at the main page.
+- User can toggle favorite pics
+- User can see favorited pics
+- User can add image to cart
+- User can remove image from cart
+- Total cost is automatically calculated
+- User can place order
+```
+## Animation of the Website
+
+![image](./7-capstone-project/7-capstone-project.gif)
+
+
+## Technologies 💻
+```bash
+- React
+- React Router Dom
+- React Context
+- Custom Hover Hook
+- [Scrimba Images](https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json)
+```

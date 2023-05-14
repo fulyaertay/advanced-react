@@ -204,7 +204,7 @@
 
 
 ## 7-capstone-project
-    It is an eCommerce site that pulls all my new React knowledge together. You can access the random photos with the detail. I used the React context to provide and distribute photos. The photos is taken from the [Scrimba Images](https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json). 
+It is an eCommerce site that pulls all my new React knowledge together. You can access the random photos with the detail. I used the React context to provide and distribute photos. The photos is taken from the [Scrimba Images](https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json). 
     
 ## Check The Live Website ➡️ [Live Website](https://fe-photo-store.netlify.app/)
 
@@ -219,11 +219,7 @@
 ```
 ## Animation of the Website
 
-![image](./lastfm.gif)
-
-## Visulation of the Website
-
-![image](./7-capstone-project.gif)
+![image](./7-capstone-project/7-capstone-project.gif)
 
 
 ## Technologies 💻

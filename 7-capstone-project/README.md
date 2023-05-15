@@ -14,7 +14,7 @@ It is an eCommerce site that pulls all my new React knowledge together. You can 
 ```
 ## Animation of the Website
 
-![image](./7-capstone-project/7-capstone-project.gif)
+![image](./7-capstone-project.gif)
 
 
 ## Technologies 💻

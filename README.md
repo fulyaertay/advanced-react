@@ -42,6 +42,8 @@
 
 - [7-capstone-project](#7-capstone-project)
 
+- [8-react-redux](#8-react-redux)
+
   ## Overview
 
   Completed these challenges that are parts of [Scrimba](https://scrimba.com/learn/frontend/)'s Advanced React Course. I learned fundamentals of advanced React topics with these challenges.
@@ -230,3 +232,11 @@ It is an eCommerce site that pulls all my new React knowledge together. You can 
 - Custom Hover Hook
 - [Scrimba Images](https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json)
 ```
+
+
+  ## 8-react-redux
+     The basic counter app is created using **react-redux**, **useSelector()** and **useDispatch()** hooks.
+
+  ### Visualization of the app;
+
+  ![image](./8-react-redux/react-redux.png)

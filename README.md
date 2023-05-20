@@ -235,7 +235,7 @@ It is an eCommerce site that pulls all my new React knowledge together. You can 
 
 
   ## 8-react-redux
-     The basic counter app is created using **react-redux**, **useSelector()** and **useDispatch()** hooks.
+  The basic counter app is created using **react-redux**, **useSelector()** and **useDispatch()** hooks.
 
   ### Visualization of the app;
 
